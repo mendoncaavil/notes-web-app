@@ -6,21 +6,25 @@ function Notes(props) {
     props.deleteItem(props.id);
   };
 
+  const dateTime = new Date().toLocaleString();
+  
+
   return (
     <div style={{display: "flex", flexWrap: "wrap", margin: "10px"}}>
       <Card key={props.key} >
         <Card.Body style={{ backgroundColor: "#E6DED3" }}>
-          <Card.Title>{props.title}</Card.Title>
+          <Card.Title style={{fontSize:"30px"}}>{props.title}</Card.Title>
           <Card.Text
             style={{
               whiteSpace: "pre-wrap",
               wordWrap: "break-word",
               width: "200px",
+              fontSize:"22px"
             }}
           >
             {props.content}
           </Card.Text>
-          <Card.Subtitle className="mb-2 text-muted">Date & Time</Card.Subtitle>
+          <Card.Subtitle className="mb-2 text-muted" style={{fontSize: "12px"}}>{dateTime}</Card.Subtitle>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"

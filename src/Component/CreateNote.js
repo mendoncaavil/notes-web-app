@@ -42,7 +42,7 @@ function CreateNote(props) {
           placeholder="Title"
           autoComplete="off"
           className="inputarea"
-          style={{backgroundColor: "#E6DED3", width: "300px", border: "none"}}
+          style={{backgroundColor: "#E6DED3", width: "300px", border: "none", borderRadius: "10px 10px 0 0" }}
         />
         <div>
           <textarea
@@ -53,7 +53,7 @@ function CreateNote(props) {
             column="5"
             placeholder="Take a note..."
             className="textarea"
-            style={{backgroundColor: "#E6DED3", width: "300px", height: "100px", border: "none"}}
+            style={{backgroundColor: "#E6DED3", width: "300px", height: "100px", border: "none", borderRadius: "0 0 10px 10px"}}
           />
         </div>
         <button onClick={addEvent} className="button-style">Add Note</button>
