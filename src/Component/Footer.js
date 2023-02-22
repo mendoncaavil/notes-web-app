@@ -1,12 +1,12 @@
 import React from 'react'
+import './style.css'
 
 function Footer() {
 
     const year = new Date().getFullYear();
 
   return (
- 
-    <footer>
+    <footer className='footer-wrapper'>
         <p>copyright © {year}</p>
     </footer>
  
