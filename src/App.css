@@ -7,11 +7,7 @@
   pointer-events: none;
 }
 
-.card-wrapper{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
